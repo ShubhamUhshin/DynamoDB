@@ -1,0 +1,31 @@
+Three Types of DB
+    Structured: Data with high degree of organisation, such that inclusion in a relational DB is seamless and readily searchable by Simple, straightforward Search Engine algo.
+    Semi-Structured: Data that does not reside in a DB but has some organised data to make process easily.
+    Unstructured: Does not have a pre-defined data model or is not organised in a pre-defined manner. It is generally text-heavy. 
+        For eg: E-Mail messages, Word processing Documents, Videos, photos etc.
+
+    Dynamo DB Table:
+    It contains Item
+        {Consider as Java Objects}
+        In dynamo DB, there is one unique primary key.
+        Dynamo DB contains data in form of table.
+
+    ITEMS
+    Group of attribute that is uniquely identifiable among all of the other items.
+
+    ATTRIBUTES
+    Each ITEM is composed of One or More attribute.
+    An attribute consist of  the attribute name and a value or a set of values
+    NOTE: It can have data upto 400kb, for data more than this, S3 bucket is used.
+    The data is in S3 bucket and the URL is stored in the attribute.
+
+    DDB allows low latency read/write access to items.
+    Can be used to store pointers to S3 stoed Objects, or items to size larger thna 400kb of size.
+    DDb stores the data indexed by Primary Key.
+    User specifies the primary key while creating the table.
+    DDB tables are schemaless, i.e. the datatype doesn't need to be defined beforehand, the datatype can be unique.
+    i.e. key value pair format. The key/data can be integer string etc.
+    
+
+
+
